@@ -49,7 +49,7 @@
     </div>
 
     <div class="container">
-<div id = "content">
+<div id = "content" itemscope itemtype="http://schema.org/Person">
     
       <div class = "row">
 	<div class = "span12">
@@ -57,26 +57,26 @@
 	</div>
       </div>
       
-      <div class = "row">
+      <div class="row">
 	<div class="span2">
-	  <img src="https://secure.gravatar.com/avatar/e064986be7ea33624fdda314cc9c6fff.png?s=180" class="img-rounded img-header" />
+	  <img src="https://secure.gravatar.com/avatar/e064986be7ea33624fdda314cc9c6fff.png?s=180" alt="image of Benjamin Herbert" itemprop="image" class="img-rounded img-header" />
 	</div>
-	<div class="span8">	  
+	<div class="span8"> 
 	  <p>
+	    Mein Name ist <span itemprop="name">Benjamin Herbert</span>, ich lebe in Frankfurt und bin <span itemprop="jobTitle">Software Engineer</span>.
+	    <br />	   
 	  Ich &uuml;berarbeite gerade meine Homepage. Es dauert nicht mehr allzu lange, dann gibt es hier Neuigkeiten und Wissenswertes.
 	  <br />
 	  Status: 
 	  <div class="progress progress-striped active">
 	    <div class="bar" style="width: 70%;"></div>
-	  </div>
-	  </p>
+	  </div>	  
 	</div>	  
       </div>
       
       <div class="row">
-
 	<div class="span5">
-	<h2>Fachliche Interessen</h3>
+	<h2>Fachliche Interessen</h2>
 	  <ul>
 	    <li>Konzeption, Entwicklung und Test von Softwarelösungen in Java</li>
 	    <li>Build Management</li>
@@ -86,7 +86,7 @@
 	  </ul>	  
 	</div>
 	<div class="span7">
-	  <h2>Recent Posts</h3>
+	  <h2>Recent Posts</h2>
 	  <ul class="unstyled">
 	    
 	      <li>
@@ -106,16 +106,17 @@
 	</div>
 	
 	
-	<div class="span4">	
-	
-	  <h2>Impressum</h3>
-	  <p>	Benjamin Herbert<br />
-		Mailänderstraße 10 - 61<br />
-		60598 Frankfurt <br />
-		<i class="icon-envelope"></i> benjamin <a href="http://de.wikipedia.org/wiki/At-Zeichen">[at]</a> herbert  <a href="http://de.wikipedia.org/wiki/Punkt_(Satzzeichen)"
-		>[punkt] </a> cc </p>          
-	</div>	
-      </div>      
+	<div class="span4">
+	  
+	   <h2>Impressum</h2>
+	   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	    <span itemprop="streetAddress">Mailänderstraße 10 - 61</span> <br />
+	    <span itemprop="postalCode">60598</span>&nbsp;<span  itemprop="addressLocality">Frankfurt am Main</span> <br />	   
+	    <i class="icon-envelope"></i>&nbsp;<a href="mailto:benjamin@herbert.cc" itemprop="email">benjamin@herbert.cc</a>
+	   </div>
+	</div>      
+
+</div>
 </div>
       
       <hr>
