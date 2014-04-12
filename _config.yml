@@ -1,0 +1,16 @@
+# Jekyll
+exclude: []
+markdown: redcarpet
+
+permalink: /blog/:year/:month/:day/:title/
+tagline: Benjamin Herbert
+
+navigation:
+- text: Home
+  url: /
+  alt_url: /index.html
+  layout: default
+- text: Archive
+  url: /blog/
+  alt_url: /blog/index.html
+  layout: archive

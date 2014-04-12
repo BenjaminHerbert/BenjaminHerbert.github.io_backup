@@ -1,1 +1,54 @@
-Hello World
+---
+layout: default
+title: Blog - Benjamin Herbert
+---
+
+      <div class="hero-unit">
+        <h2>Willkommen auf herbert.cc</h2>
+                  <img src="https://secure.gravatar.com/avatar/e064986be7ea33624fdda314cc9c6fff.png?s=180" class="img-rounded img-header" />
+        <p>Ich arbeite gerade an meiner neuen Homepage. In Kürze gibt es hier dann ein Update.</p>        
+	
+	<p>
+	Status: 
+	<div class="progress progress-striped active"><div class="bar" style="width: 20%;"></div></div></p>
+      </div>
+      <!-- Example row of columns -->
+      <div class="row">
+	
+	<div class="span5">
+	<h3>Skills</h3>
+	  <ul>
+	    <li>Konzeption, Entwicklung und Test von Softwarelösungen in Java</li>
+	    <li>Build Management</li>
+	    <li>Release Management</li>
+	    <li>Continuous Integration, Continuous Delivery</li>	    
+	  </ul>	  
+	</div>
+      
+        <div class="span3">	
+	
+          <h3>Impressum</h3>
+           <p>	Benjamin Herbert<br />
+		Mailänderstraße 10 - 61<br />
+		60598 Frankfurt <br />
+		<i class="icon-envelope"></i> benjamin <a href="http://de.wikipedia.org/wiki/At-Zeichen">[at]</a> herbert  <a href="http://de.wikipedia.org/wiki/Punkt_(Satzzeichen)"
+		>[punkt] </a> cc </p>          
+        </div>
+	<div class="span4">
+	<h2>Sonstiges</h2>
+	<img src="http://eclipse.org/donate/images/friendslogo.jpg" alt="Logo of friends of eclipse" />	
+	</div>	
+      </div>
+      <hr>
+      <div class="row">
+	<div class="offset1 span10">
+	  <h3>Recent Posts</h3>
+	  <ul class="unstyled">
+	    {% for post in site.posts limit: 5 %}
+	      <li>
+	      <span class="label label-inverse label-date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+      </div>
