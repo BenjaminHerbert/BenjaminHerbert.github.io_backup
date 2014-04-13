@@ -38,10 +38,28 @@
           </a>
           <a class="brand" href="/">Herbert.cc</a>
           <div class="nav-collapse">
+            <!--         
+            
             <ul class="nav">
               <li class="active"><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>-->
+          <!--/.nav-collapse -->
+          <ul class="nav">
+	    {% for link in site.navigation %}
+		{% assign current = nil %}
+		{% if page.url contains link.url %}
+		    {% assign current = 'active' %}
+		{% endif %}
+		<li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+		    
+		    <a href="{{ link.url }}">{% if link.iconclass %} <i class="{{link.iconclass}}"></i> {% endif %}
+		    {{ link.text }}</a>
+		</li>
+	    {% endfor %}
+	  </ul>
+          
+          
         </div>
       </div>
     </div>
