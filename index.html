@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog - Benjamin Herbert
+title: Blog
 ---          
 <div id = "content" itemscope itemtype="http://schema.org/Person">
     
@@ -34,7 +34,7 @@ title: Blog - Benjamin Herbert
 	    <li>Konzeption, Entwicklung und Test von Softwarelösungen in Java</li>
 	    <li>Build Management</li>
 	    <li>Release Management</li>
-	    <li>Continuous Integration, Continuous Delivery,Devops</li>
+	    <li>Continuous Integration, Continuous Delivery, Devops</li>
 	    <li>Software Craftsmanship</li>
 	  </ul>	  
 	</div>
@@ -43,8 +43,8 @@ title: Blog - Benjamin Herbert
 	  <ul class="unstyled">
 	    {% for post in site.posts limit: 5 %}
 	      <li>
-	      <span class="label label-inverse label-date">{{ post.date | date_to_string }}</span> &raquo; 
-	      <a href="{{ post.url }}">{{ post.title }}</a>
+		<span class="label label-inverse label-date">{{ post.date | date_to_string }}</span> &raquo; 
+		<a href="{{ post.url }}">{{ post.title }}</a>
 	      </li>
 	    {% endfor %}
 	  </ul>
@@ -56,19 +56,15 @@ title: Blog - Benjamin Herbert
 	<div class="span8">
 	  <h2>Sonstiges</h2>
 	  <img src="http://eclipse.org/donate/images/friendslogo.jpg" alt="Logo of friends of eclipse" />	
-	</div>
-	
-	
-	<div class="span4">
-	  
-	   <h2>Impressum</h2>
-	   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	</div>	
+	<div class="span4">	  
+	  <h2>Impressum</h2>
+	  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 	    <span itemprop="streetAddress">Mailänderstraße 10 - 61</span> <br />
 	    <span itemprop="postalCode">60598</span>&nbsp;<span  itemprop="addressLocality">Frankfurt am Main</span> <br />	   
 	    <i class="icon-envelope"></i>&nbsp;<a href="mailto:benjamin@herbert.cc" itemprop="email">benjamin@herbert.cc</a>
-	   </div>
-	</div>      
-
-</div>
+	  </div>
+	</div>
+      </div>
 </div>
       
