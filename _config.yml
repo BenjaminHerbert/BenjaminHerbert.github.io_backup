@@ -9,8 +9,8 @@ navigation:
 - text: Home
   url: /index.html
   iconclass: icon-home icon-white
-  alt_url: /index.html
+  alt_url: /
   layout: default
-- text: Imressum
+- text: Impressum
   url: /impressum.html
   layout: default
