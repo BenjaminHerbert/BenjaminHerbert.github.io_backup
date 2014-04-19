@@ -12,7 +12,7 @@ Bei Google benutze ich schon länger diese Art der Authentifizierung. Neben dem 
 
 Das Video beschreibt ganz anschaulich, was bei der Google Zwei-Faktor-Authentifizierung zu beachten ist:
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/zMabEyrtPRg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/zMabEyrtPRg" frameborder="0"></iframe>
 
 
 Nach dem [Heartbleed-Bug](http://heartbleed.com/) stand auf meiner To-do-Liste natürlich versch. Accounts abzusichern. Dabei bin ich auf die ["two-factor authentication list"](http://evanhahn.com/2fa/) gestoßen. Eine sehr hilfreiche Liste mit vielen Seiten im Netz und Information dazu, wo und wie man die Authentifizierung umstellen kann.
