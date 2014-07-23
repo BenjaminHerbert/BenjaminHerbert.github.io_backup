@@ -4,7 +4,7 @@ title: Blog
 ---          
 <div id = "content" itemscope itemtype="http://schema.org/Person">
     
-      <div class = "row">
+      <div class="row">
 	<div class = "span12">
 	  <h1>Willkommen</h1>
 	</div>
@@ -16,14 +16,10 @@ title: Blog
 	</div>
 	<div class="span8"> 
 	  <p>
-	    Mein Name ist <span itemprop="name">Benjamin Herbert</span>, ich lebe in Frankfurt und bin <span itemprop="jobTitle">Software Engineer</span>.
-	    <br />	   
-	  Ich &uuml;berarbeite gerade meine Homepage. Es dauert nicht mehr allzu lange, dann gibt es hier Neuigkeiten und Wissenswertes.
-	  <br />
-	  Status: 
-	  <div class="progress progress-striped active">
-	    <div class="bar" style="width: 70%;"></div>
-	  </div>	  
+	   <span itemprop="name">Benjamin Herbert</span> ist ein <span itemprop="jobTitle">Softwareentwickler</span> mit Schwerpunkt auf Java. Er hat mehr als 9 Jahren Erfahrung in
+der IT-Branche, insbesondere in allen Phasen der Anwendungsentwicklung wie Konzeption, Entwicklung, Test und Releasemanagement gesammelt. Er ist ein Anhänger von der Softwarecraftsmanship-Bewegung und ist sehr motiviert sich persönlich und fachlich weiter zu entwickeln. Durch seine langjährige Erfahrung mit Legacy-Code hat er gelernt, wie wichtig sauberer, wartbarer Code ist und welche Vorteile test-getriebene Entwicklung bringen kann. 
+
+Automatisierung hält er für enorm wichtig um sich auf die schwierigen und komplexen Probleme zu fokussieren und keine Zeit mit sich wiederholenden Aufgaben zu verlieren. Wenn es die Zeit erlaubt, nimmt er an Meetings der Softwerkskammer Rhein-Main teil und tauscht sich mit Gleichgesinnten aus.
 	</div>	  
       </div>
       
@@ -50,21 +46,17 @@ title: Blog
 	  </ul>
 	</div>      
       </div>
-      
-      <div class="row">
-	
+     
+      <div class="row">	
 	<div class="span8">
 	  <h2>Sonstiges</h2>
-	  <img src="http://eclipse.org/donate/images/friendslogo.jpg" alt="Logo of friends of eclipse" />	
+	  <img src="http://eclipse.org/donate/images/friendslogo.jpg" alt="Logo of friends of eclipse" />
 	</div>	
 	<div class="span4">	  
-	  <h2>Impressum</h2>
-	  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-	    <span itemprop="streetAddress">Mailänderstraße 10 - 61</span> <br />
-	    <span itemprop="postalCode">60598</span>&nbsp;<span  itemprop="addressLocality">Frankfurt am Main</span> <br />	   
-	    <i class="icon-envelope"></i>&nbsp;<a href="mailto:benjamin@herbert.cc" itemprop="email">benjamin@herbert.cc</a>
-	  </div>
+	  <h2>Kontakt</h2>
+	  {% include address.html %}
 	</div>
       </div>
+
 </div>
       
